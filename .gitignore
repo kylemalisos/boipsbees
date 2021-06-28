@@ -43,3 +43,10 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+"vim.insertModeKeyBindings": [
+     {
+         "before": ["j", "j"],
+         "after": ["<esc>"]
+     }
+]
