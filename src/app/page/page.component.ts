@@ -10,7 +10,7 @@ export class PageComponent implements OnInit {
     title: 'Boip\'s Bees',
     subtitle: 'Save The Bees!',
     content: 'boip will be the #1 Melee Mario player in the world!',
-    image: 'assets/bg00.jpg'
+    image: 'assets/img/logo.png'
   };
 
   constructor() { }

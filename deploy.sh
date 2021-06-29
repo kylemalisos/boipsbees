@@ -1,7 +1,19 @@
 #!/bin/bash
 
+printf '\nCreating production build in ./dist/boipsbees/ ...\n'
+
 ng build
 
-rm -r /public/
+printf '\nRemoving old files in ./public/ ...\n'
 
-cp /dist/boipsbees/ /public/
+rm -v ./public/*
+
+printf '\ncopying files from ./dist/boipsbees/* to ./public/ ...\n'
+
+cp -v ./dist/boipsbees/* ./public/
+
+printf '\ndeploying to firebase...\n'
+
+firebase deploy
+
+printf '\nfinished executing! ;):\n'
