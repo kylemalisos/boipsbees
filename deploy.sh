@@ -1,19 +1,19 @@
 #!/bin/bash
 
-printf '\nCreating production build in ./dist/boipsbees/ ...\n'
+printf '\n ========== Creating production build in ./dist/boipsbees/ ... ========== \n'
 
 ng build
 
-printf '\nRemoving old files in ./public/ ...\n'
+printf '\n ========== Removing old files in ./public/ ... ========== \n'
 
 rm -v ./public/*
 
-printf '\ncopying files from ./dist/boipsbees/* to ./public/ ...\n'
+printf '\n ========== copying files from ./dist/boipsbees/* to ./public/ ... ========== \n'
 
 cp -v ./dist/boipsbees/* ./public/
 
-printf '\ndeploying to firebase...\n'
+printf '\n ========== deploying to firebase... ========== \n'
 
 firebase deploy
 
-printf '\nfinished executing! ;):\n'
+printf '\n ========== finished executing! ;): ========== \n'

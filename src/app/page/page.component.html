@@ -1,10 +1,30 @@
 <div class="website" >
-    <img id="logo" src="./assets/img/logo.png" alt="logo" width="4%" />
 
-    <h1 id="title" >{{page.title}}</h1>
-    <p>
-        {{page.subtitle}}
+    <div class="nav">
 
-        {{page.content}}
-    </p>
+        <div id="logoTitle">
+            <img id="logo" src="../../assets/img/logo.png" alt="logo" width="4%" />
+
+            <h1 id="title">{{page.title}}</h1>
+        </div>
+    
+        <div class="buttons">
+            <button class="btn warning">SHOP</button>
+    
+            <button class="btn warning">EVENTS</button>
+    
+            <button class="btn warning">MERCH</button>
+    
+            <button class="btn warning">ABOUT</button>
+        </div>
+
+    </div>    
+    
+    <div class="body">
+        <p>
+            {{page.subtitle}}
+    
+            {{page.content}}
+        </p>
+    </div>
 </div>
